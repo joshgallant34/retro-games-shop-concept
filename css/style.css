@@ -1,0 +1,73 @@
+/* Reset & root colors */
+:root {
+  --bg:#111;
+  --accent:#0ff;
+  --accent2:#f0f;
+  --text:#eee;
+  --card:#1a1a1a;
+  --radius:12px;
+}
+
+* { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family: 'Press Start 2P', monospace;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+header {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  border-bottom: 2px solid var(--accent);
+}
+
+header .logo { font-size:20px; color:var(--accent); }
+nav a { color: var(--text); margin-left:16px; text-decoration:none; }
+nav a:hover { color: var(--accent2); }
+
+main { padding:32px; }
+.hero { text-align:center; margin-bottom:32px; }
+.hero h1 { font-size:28px; color: var(--accent); }
+.hero p { margin-top:12px; color: #aaa; }
+
+.games-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.game-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding:16px;
+  text-align:center;
+  transition: transform 0.2s;
+}
+
+.game-card:hover { transform: scale(1.05); }
+
+.game-card img { width:100%; height: 250px; object-fit:cover; border-radius:8px; margin-bottom:12px; }
+
+.game-card h3 { color: var(--accent); margin-bottom:8px; }
+.game-card p { font-size:12px; color:#aaa; margin-bottom:12px; }
+
+.game-card .btn {
+  display:inline-block;
+  padding:8px 12px;
+  border-radius:6px;
+  background: var(--accent2);
+  color:var(--bg);
+  text-decoration:none;
+  font-weight:bold;
+}
+
+footer {
+  text-align:center;
+  padding:16px;
+  border-top:2px solid var(--accent);
+  margin-top:32px;
+  color:#888;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pong — Retro Arcade</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      background:#111;
+      color:#0ff;
+      font-family:'Press Start 2P', monospace;
+    }
+    h1 { margin-bottom:16px; color:#0ff; }
+    canvas {
+      background:#000;
+      border:2px solid #0ff;
+      display:block;
+    }
+    .score { margin:12px; }
+    .btn {
+      margin-top:16px;
+      padding:8px 12px;
+      border-radius:6px;
+      background:#f0f;
+      color:#000;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    #startBtn, #pauseBtn {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      font-family:'Press Start 2P', monospace;
+      font-size:16px;
+      padding:12px 24px;
+      border:none;
+      border-radius:6px;
+      background:#0ff;
+      color:#000;
+      cursor:pointer;
+    }
+    #pauseBtn { display:none; }
+    .game-container { position:relative; }
+  </style>
+</head>
+<body>
+  <h1>Pong</h1>
+  <div class="score">Player: <span id="playerScore">0</span> — CPU: <span id="cpuScore">0</span></div>
+  
+  <div class="game-container">
+    <canvas id="pongCanvas" width="600" height="400"></canvas>
+    <button id="startBtn">START</button>
+    <button id="pauseBtn">PAUSED</button>
+  </div>
+
+  <a class="btn" href="../index.html">Back to Arcade</a>
+  <script src="../js/pong.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout — Retro Arcade</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      background:#111;
+      color:#0ff;
+      font-family:'Press Start 2P', monospace;
+    }
+    h1 { margin-bottom:16px; color:#0ff; }
+    canvas { background:#000; border:2px solid #0ff; }
+    .score { margin:12px; }
+    .btn { margin-top:16px; padding:8px 12px; border-radius:6px; background:#f0f; color:#000; text-decoration:none; font-weight:bold; }
+  </style>
+</head>
+<body>
+  <h1>Breakout</h1>
+  <div class="score">Score: <span id="score">0</span></div>
+  <canvas id="breakoutCanvas" width="480" height="320"></canvas>
+  <div>
+    <button class="btn" id="startBtn">Start Game</button>
+    <button class="btn" id="pauseBtn" style="display:none;">Paused</button>
+    <a class="btn" href="../index.html">Back to Arcade</a>
+  </div>
+
+  <script src="../js/breakout.js"></script>
+</body>
+</html>
