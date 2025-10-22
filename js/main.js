@@ -2,21 +2,21 @@
 const games = [
   {
     title: "Snake",
-    img: "images/snake.png",
+    img: "images/Snake.png",
     desc: "Classic Snake game. Eat the food and grow your snake!",
-    link: "games/snake.html"
+    link: "games/Snake.html"
   },
   {
     title: "Pong",
-    img: "images/pong.png",
+    img: "images/Pong.png",
     desc: "Retro Pong. Challenge yourself or a friend!",
-    link: "games/pong.html"
+    link: "games/Pong.html"
   },
   {
     title: "Breakout",
-    img: "images/breakout.png",
+    img: "images/Breakout.png",
     desc: "Break bricks and reach the highest score!",
-    link: "games/breakout.html"
+    link: "games/Breakout.html"
   }
 ];
 
